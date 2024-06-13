@@ -14,12 +14,12 @@ my_note.title
 my_note.text
 ```
 
-Display all
+Display all:
 ```
 Notes.objectss.all()
 ```
 
-Create new note
+Create new note:
 ```
 new_note = Notes.objects.create(title="A second note", text="This is a second note")
 ```
@@ -32,4 +32,9 @@ Notes.objects.filter(title__startswith="My")
 Filter the notes and find one that contains the word "Django" in the text:
 ```
 Notes.objects.filter(text__icontains='Django')
+```
+
+Exclude a word from the search:
+```
+Notes.objects.exclude(text__icontains="Django")
 ```
