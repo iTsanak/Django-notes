@@ -18,3 +18,18 @@ Display all
 ```
 Notes.objectss.all()
 ```
+
+Create new note
+```
+new_note = Notes.objects.create(title="A second note", text="This is a second note")
+```
+
+Filter the notes and find the one where the "title" starts with:
+```
+Notes.objects.filter(title__startswith="My")
+```
+
+Filter the notes and find one that contains the word "Django" in the text:
+```
+Notes.objects.filter(text__icontains='Django')
+```
