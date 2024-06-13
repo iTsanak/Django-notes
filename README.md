@@ -1,0 +1,2 @@
+# Django-notes
+Django notes
