@@ -48,8 +48,3 @@ Filter and exclude at the same time:
 ```
 Notes.objects.filter(text__icontains="Django").exclude(title__icontains="Django")
 ```
-
-Filter and exclude at the same time:
-```
-Notes.objects.filter(text__icontains="Django").exclude(title__icontains="Django")
-```
