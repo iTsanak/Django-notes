@@ -14,6 +14,7 @@ my_note.title
 my_note.text
 ```
 
+
 Display all:
 ```
 Notes.objectss.all()
